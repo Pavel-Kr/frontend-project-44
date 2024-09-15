@@ -1,5 +1,4 @@
-// Get random number in range [min; max). Max not included
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
+import getRandomNumber from '../random.js';
 
 const isEven = (number) => number % 2 === 0;
 

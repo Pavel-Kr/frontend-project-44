@@ -13,3 +13,5 @@ A set of console logic mini-games.
 ## Demos
 
 [Brain-even](https://asciinema.org/a/79XN8vPkWyrg9vYtfI29ZpViE)
+
+[Brain-calc](https://asciinema.org/a/dGwBfLuasE3xIlM9KG0nnwmGE)
