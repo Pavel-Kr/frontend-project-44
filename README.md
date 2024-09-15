@@ -15,3 +15,5 @@ A set of console logic mini-games.
 [Brain-even](https://asciinema.org/a/79XN8vPkWyrg9vYtfI29ZpViE)
 
 [Brain-calc](https://asciinema.org/a/dGwBfLuasE3xIlM9KG0nnwmGE)
+
+[Brain-gcd](https://asciinema.org/a/CZrIEEM4FRnMWUjpG2pi8PoUW)
