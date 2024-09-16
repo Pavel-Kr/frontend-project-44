@@ -18,4 +18,4 @@ A set of console logic mini-games.
 
 [Brain-gcd](https://asciinema.org/a/CZrIEEM4FRnMWUjpG2pi8PoUW)
 
-[Brain-progression](https://asciinema.org/a/iQK7UCqvBhsIYTNRoIL8IMDsN)
+[Brain-progression](https://asciinema.org/a/PpLWRAt9EvpN3XC6CdTXvpVr0)
