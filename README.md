@@ -19,3 +19,5 @@ A set of console logic mini-games.
 [Brain-gcd](https://asciinema.org/a/CZrIEEM4FRnMWUjpG2pi8PoUW)
 
 [Brain-progression](https://asciinema.org/a/PpLWRAt9EvpN3XC6CdTXvpVr0)
+
+[Brain-prime](https://asciinema.org/a/YrhyE4j5Uy6kcacNjxITr1JGV)
