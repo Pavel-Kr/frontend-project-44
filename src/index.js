@@ -2,10 +2,10 @@ import readlineSync from 'readline-sync';
 import greetUser from './cli.js';
 
 const runGame = (startMessage, generateQuestion) => {
-  const numberOfRounds = 3;
+  const roundsCount = 3;
   const name = greetUser();
   console.log(startMessage);
-  for (let i = 0; i < numberOfRounds; i += 1) {
+  for (let i = 0; i < roundsCount; i += 1) {
     const [question, correctAnswer] = generateQuestion();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');

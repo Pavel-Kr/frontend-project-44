@@ -1,30 +1,40 @@
 import getRandomNumber from '../random.js';
+import runGame from '../index.js';
 
-const generateQuestion = () => {
-  const minNumber = 1;
-  const maxNumber = 20;
-  const operators = ['+', '-', '*'];
-  const leftOp = getRandomNumber(minNumber, maxNumber);
-  const rightOp = getRandomNumber(minNumber, maxNumber);
-  const operator = operators[getRandomNumber(0, 3)];
-  const question = `${leftOp} ${operator} ${rightOp}`;
-  let correctAnswer;
+const calculateExpression = (number1, operator, number2) => {
+  let result = 0;
   switch (operator) {
     case '+':
-      correctAnswer = leftOp + rightOp;
+      result = number1 + number2;
       break;
     case '-':
-      correctAnswer = leftOp - rightOp;
+      result = number1 - number2;
       break;
     case '*':
-      correctAnswer = leftOp * rightOp;
+      result = number1 * number2;
       break;
     default:
       console.log(`Invalid operator: '${operator}'`);
+      result = null;
       break;
   }
-  correctAnswer = String(correctAnswer);
-  return [question, correctAnswer];
+  return result;
 };
 
-export default generateQuestion;
+const generateQuestion = () => {
+  const operators = ['+', '-', '*'];
+  const number1 = getRandomNumber(1, 20);
+  const number2 = getRandomNumber(1, 20);
+  const operator = operators[getRandomNumber(0, operators.length - 1)];
+  const question = `${number1} ${operator} ${number2}`;
+  const result = calculateExpression(number1, operator, number2);
+  const answer = String(result);
+  return [question, answer];
+};
+
+const runCalc = () => {
+  const startMessage = 'What is the result of the expression?';
+  runGame(startMessage, generateQuestion);
+};
+
+export default runCalc;

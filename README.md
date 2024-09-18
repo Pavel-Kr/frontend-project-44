@@ -12,12 +12,17 @@ A set of console logic mini-games.
 
 ## Demos
 
-[Brain-even](https://asciinema.org/a/79XN8vPkWyrg9vYtfI29ZpViE)
+### Brain-even
+[![asciicast](https://asciinema.org/a/79XN8vPkWyrg9vYtfI29ZpViE.svg)](https://asciinema.org/a/79XN8vPkWyrg9vYtfI29ZpViE)
 
-[Brain-calc](https://asciinema.org/a/dGwBfLuasE3xIlM9KG0nnwmGE)
+### Brain-calc
+[![asciicast](https://asciinema.org/a/dGwBfLuasE3xIlM9KG0nnwmGE.svg)](https://asciinema.org/a/dGwBfLuasE3xIlM9KG0nnwmGE)
 
-[Brain-gcd](https://asciinema.org/a/CZrIEEM4FRnMWUjpG2pi8PoUW)
+### Brain-gcd
+[![asciicast](https://asciinema.org/a/CZrIEEM4FRnMWUjpG2pi8PoUW.svg)](https://asciinema.org/a/CZrIEEM4FRnMWUjpG2pi8PoUW)
 
-[Brain-progression](https://asciinema.org/a/PpLWRAt9EvpN3XC6CdTXvpVr0)
+### Brain-progression
+[![asciicast](https://asciinema.org/a/PpLWRAt9EvpN3XC6CdTXvpVr0.svg)](https://asciinema.org/a/PpLWRAt9EvpN3XC6CdTXvpVr0)
 
-[Brain-prime](https://asciinema.org/a/YrhyE4j5Uy6kcacNjxITr1JGV)
+### Brain-prime
+[![asciicast](https://asciinema.org/a/YrhyE4j5Uy6kcacNjxITr1JGV.svg)](https://asciinema.org/a/YrhyE4j5Uy6kcacNjxITr1JGV)

@@ -1,34 +1,31 @@
 import getRandomNumber from '../random.js';
+import runGame from '../index.js';
 
-const getProgressionStart = () => {
-  const minNumber = 1;
-  const maxNumber = 20;
-  const progressionStart = getRandomNumber(minNumber, maxNumber + 1);
-  return progressionStart;
-};
-
-const getProgressionStep = () => {
-  const minNumber = 1;
-  const maxNumber = 5;
-  const progressionStep = getRandomNumber(minNumber, maxNumber + 1);
-  return progressionStep;
+const generateProgression = (start, step, length) => {
+  const progression = [];
+  let progressionElement = start;
+  for (let i = 0; i < length; i += 1) {
+    progression.push(`${progressionElement}`);
+    progressionElement += step;
+  }
+  return progression;
 };
 
 const generateQuestion = () => {
   const progressionLength = 10;
-  const progressionStart = getProgressionStart();
-  const missingElementPosition = getRandomNumber(0, progressionLength);
-  const progression = [];
-  let progressionElement = progressionStart;
-  const progressionStep = getProgressionStep();
-  for (let i = 0; i < progressionLength; i += 1) {
-    progression.push(`${progressionElement}`);
-    progressionElement += progressionStep;
-  }
-  const correctAnswer = progression[missingElementPosition];
+  const progressionStart = getRandomNumber(1, 20);
+  const missingElementPosition = getRandomNumber(0, progressionLength - 1);
+  const progressionStep = getRandomNumber(1, 5);
+  const progression = generateProgression(progressionStart, progressionStep, progressionLength);
+  const answer = progression[missingElementPosition];
   progression[missingElementPosition] = '..';
   const question = progression.join(' ');
-  return [question, correctAnswer];
+  return [question, answer];
 };
 
-export default generateQuestion;
+const runProgression = () => {
+  const startMessage = 'What number is missing in the progression?';
+  runGame(startMessage, generateQuestion);
+};
+
+export default runProgression;
