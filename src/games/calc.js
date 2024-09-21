@@ -1,27 +1,21 @@
-import getRandomNumber from '../random.js';
+import getRandomNumber from '../getRandomNumber.js';
 import runGame from '../index.js';
 
 const calculateExpression = (number1, operator, number2) => {
-  let result = 0;
   switch (operator) {
     case '+':
-      result = number1 + number2;
-      break;
+      return number1 + number2;
     case '-':
-      result = number1 - number2;
-      break;
+      return number1 - number2;
     case '*':
-      result = number1 * number2;
-      break;
+      return number1 * number2;
     default:
       console.log(`Invalid operator: '${operator}'`);
-      result = null;
-      break;
+      return null;
   }
-  return result;
 };
 
-const generateQuestion = () => {
+const generateRound = () => {
   const operators = ['+', '-', '*'];
   const number1 = getRandomNumber(1, 20);
   const number2 = getRandomNumber(1, 20);
@@ -34,7 +28,7 @@ const generateQuestion = () => {
 
 const runCalc = () => {
   const startMessage = 'What is the result of the expression?';
-  runGame(startMessage, generateQuestion);
+  runGame(startMessage, generateRound);
 };
 
 export default runCalc;
